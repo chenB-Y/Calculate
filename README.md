@@ -39,6 +39,6 @@ This project demonstrates a calculator application implemented using Java for th
 
 1. Clone this repository to your local machine:
 
-   ```bash
+   bash
    git clone https://github.com/yourusername/calculator-app.git
    cd calculator-app
