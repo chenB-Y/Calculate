@@ -7,12 +7,9 @@ This project demonstrates a calculator application implemented using Java for th
 - [Features](#features)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Installation](#installation)
 - [Server](#server)
 - [Client](#client)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
