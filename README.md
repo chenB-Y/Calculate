@@ -1,5 +1,8 @@
 # Calculator Application with Client-Server Model
 
+![image](https://github.com/chenB-Y/Calculate/assets/129218828/bf9503b0-cad1-449c-be9c-576f45428755)
+
+
 This project demonstrates a calculator application implemented using Java for the server-side logic and HTML, CSS, and JavaScript for the client-side interface. The client-server model is used to allow multiple clients to perform calculations through a web-based interface.
 
 ## Table of Contents
