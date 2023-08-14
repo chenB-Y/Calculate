@@ -35,10 +35,15 @@ This project demonstrates a calculator application implemented using Java for th
 3. Perform calculations using the web-based calculator.
 4. The server will process the calculations and send back the results to the client in real-time.
 
-## Installation
 
-1. Clone this repository to your local machine:
+## Server
+The server-side logic is implemented in Java, using the ServerSocket class to handle incoming client connections. The server processes calculation requests and sends back the results to the clients.
 
-   bash
-   git clone https://github.com/yourusername/calculator-app.git
-   cd calculator-app
+## Client
+The client-side interface is built using HTML, CSS, and JavaScript. The interface provides buttons for numbers and operations, and it sends HTTP requests to the server for processing calculations.
+
+## Technologies Used
+- Java for server-side logic.
+- HTML for creating the structure of the calculator interface.
+- CSS for styling the interface.
+- JavaScript for client-side interactivity and communication with the server.
