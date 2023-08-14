@@ -1,0 +1,158 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#centered{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+#center{
+    margin: 0 auto;
+    width: 300px;
+    text-align: center;
+}
+button{
+    width: 70px;
+    height: 40px;
+    background-color: black;
+    color: antiquewhite;
+    border-radius: 10px;
+}
+.explainButton{
+    width: 170px;
+    height: 30px;
+    background-color: black;
+    color: orange;
+    border-radius: 4px;
+}
+.operator{
+    width: 70px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 10px;
+}
+#zero{
+    width: 145px;
+    height: 40px;
+    border-radius: 10px;
+}
+h1{
+    text-align :center;
+    font-size: 75px;
+    line-height:0;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px rgb(218, 127, 37);
+}
+h2{
+    line-height: 0px;
+    color:white
+}
+ul{
+    text-align :center;
+    line-height: 25px;
+    color:antiquewhite;
+    list-style-type: none;
+}
+iframe{
+    background-color: rgb(65, 65, 163);
+
+}
+
+    </style>
+</head>
+
+<body style="background: url(https://static.vecteezy.com/system/resources/previews/004/194/259/original/doodle-math-objects-border-free-vector.jpg); background-size:100% 100%">
+<br><br><br><br><br><br><br>
+<h1>Chen's calculator</h1>
+<div id="showExplain" style="display:none">
+    <ul>
+        <li>The calculator solves the equation with the order of arithmetic operations.</li>
+        <li>You can type on the keyboard or press the desired button on the calculator that appears below.</li>
+        <li>The calculator knows how to solve equations that include negative numbers/fractions/decimal numbers</li>
+        <h2>Click here for an Example:</h2>
+        <video width="500" height="320" controls>
+            <source src="VideoOfExample.mp4" type="video/mp4">
+            </video>
+    </ul>
+   <div id="center"> <button class="explainButton" onclick="backToCalc()">back</button> </div>
+</div>
+<div id="centered">
+    <div id="calc">
+        <button class="explainButton" onclick="hiddAll()">Explanation & Example </button>
+        <h2>Enter you'r equation:</h2>
+    <form action = "/test" method = "GET" target = "result" id="form1">
+        <input type = "text" id="text" style="width:300px ; height:30px " name = "searchWord">
+    </form>
+    <div>
+        <button class="operator" onclick="showInForm('AC')">AC</button>
+        <button class="operator" onclick="showInForm('&#40;')">(</button>
+        <button class="operator" onclick="showInForm('&#41;')">)</button>
+        <button class="operator" onclick="showInForm('/')">/</button>
+    </div>
+    <div>
+        <button onclick="showInForm('1')">1</button>
+        <button onclick="showInForm('2')">2</button>
+        <button onclick="showInForm('3')">3</button>
+        <button class="operator" onclick="showInForm('*')">*</button>
+    </div>
+    <div>
+        <button onclick="showInForm('4')">4</button>
+        <button onclick="showInForm('5')">5</button>
+        <button onclick="showInForm('6')">6</button>
+        <button class="operator" onclick="showInForm('-')">-</button>
+    </div>
+    <div>
+        <button onclick="showInForm('7')">7</button>
+        <button onclick="showInForm('8')">8</button>
+        <button onclick="showInForm('9')">9</button>
+        <button class="operator" onclick="showInForm('+')">+</button>
+    </div>
+    <div>
+        <button id="zero" onclick="showInForm('0')">0</button>
+        <button onclick="showInForm('.')">.</button>
+        <button class="operator" onclick="toggleDiv()" type="submit" form="form1">=</button>
+    </div>
+    <br>
+    <iframe id="res" style="display: none;" width="85%" height="9%" name="result" ></iframe>
+</div>
+</div>
+        <script>
+            function toggleDiv(){
+                var x = document.getElementById("res");
+                if(x.style.display ==="none"){
+                    x.style.display = "block";
+                }
+            }
+            function hiddAll(){
+                var y = document.getElementById("showExplain");
+                var z = document.getElementById("calc")
+                if(y.style.display ==="none"){
+                    y.style.display = "block";
+                    z.style.display = "none";
+                }
+            }
+            function backToCalc(){
+                var y = document.getElementById("showExplain");
+                var z = document.getElementById("calc")
+                if(z.style.display ==="none"){
+                    z.style.display = "block";
+                    y.style.display = "none";
+                }
+            }
+            function showInForm(val){
+                var newText = document.getElementById("text")
+                if(val == 'AC'){
+                    newText.value = null;
+                }
+                else{
+                newText.value += val;
+                }
+            }
+        </script>
+</body>
+</html>
