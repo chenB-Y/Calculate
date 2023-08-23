@@ -3,7 +3,7 @@
 ![image](https://github.com/chenB-Y/Calculate/assets/129218828/bf9503b0-cad1-449c-be9c-576f45428755)
 
 
-This project demonstrates a calculator application implemented using Java for the server-side logic and HTML, CSS, and JavaScript for the client-side interface. The client-server model is used to allow multiple clients to perform calculations through a web-based interface.
+This project demonstrates a calculator application implemented using Java and OOP for the server-side logic. And HTML, CSS, and JavaScript for the client-side interface. The client-server model is used to allow multiple clients to perform calculations through a web-based interface.
 
 ## Table of Contents
 
@@ -17,6 +17,7 @@ This project demonstrates a calculator application implemented using Java for th
 ## Features
 
 - Basic arithmetic calculations (addition, subtraction, multiplication, division).
+- Solves according to the order of account operations
 - Web-based user interface for the calculator.
 - Server-side processing of calculations using Java.
 - Client-server communication using HTTP requests.
